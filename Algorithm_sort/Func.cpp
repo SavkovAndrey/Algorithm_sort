@@ -22,10 +22,19 @@ void fill_mass(int* mass, int size)
 //------------------------- ВЫВОД МАССИВА
 void output_mass(int* mass, int size)
 {
-	cout << "\n";
+	cout << "\nМассив:\n";
 	for (int i = 0; i < size; i++)
 	{
 		cout << setw(4) << mass[i];
 	}
 	cout << "\n\n";
+}
+
+//------------------------- ВЫВОД МЕНЮ
+void menu()
+{
+	cout << "1 - перезаписать массив случайными числами\n";
+	cout << "2 - вывести массив на экран\n";
+	cout << "0 - выход из программы\n\n";
+	cout << "Сделайте ваш выбор: ";
 }

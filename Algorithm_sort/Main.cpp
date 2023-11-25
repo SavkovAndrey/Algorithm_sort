@@ -18,6 +18,36 @@ int main()
 	fill_mass(mass, size);
 	output_mass(mass, size);
 
+	while (true)
+	{
+		menu();
+		int n;
+		cin >> n;
+
+		switch (n)
+		{
+			case 1:
+			{
+				fill_mass(mass, size);
+				cout << "\nВы перезаписали массив новыми случайными данными!\n\n";
+				break;
+			}
+
+			case 2:
+			{
+				output_mass(mass, size);
+				break;
+			}
+
+			case 0:
+			{
+				cout << "\nВы вышли из программы!\n";
+				system("pause");
+				return 0;
+			break;
+			}
+		}
+	}
 
 	delete[] mass;
 	system("pause");
