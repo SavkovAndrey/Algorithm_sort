@@ -39,6 +39,13 @@ int main()
 				break;
 			}
 
+			case 3:
+			{
+				Bubble(mass, size);
+				cout << "\nПроведена Пузырьковая сортировка массива!\n\n";
+				break;
+			}
+
 			case 0:
 			{
 				cout << "\nВы вышли из программы!\n";
