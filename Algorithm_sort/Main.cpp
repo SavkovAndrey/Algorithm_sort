@@ -30,17 +30,23 @@ int main()
 		    case 1:  menu();  break;
 			case 2:  fill_mass(mass, size);  break;
 			case 3:  output_mass(mass, size);  break;
-			case 4:
-			{
+			case 4:	{
 				Podmenu_4();   int m;   cin >> m;
-				switch (m)
-				{
+				switch (m){
 					case 1:  Bubble(mass, size);  break;
 					case 2:  Opt_bubble(mass, size);  break;
 					case 3:  Recur_bubble(mass, size);  break;
 					case 0:  break;
-				}
-			break;
+				}  break;
+			}
+			case 5: {
+				Podmenu_5();   int m;   cin >> m;
+				switch (m) {
+				case 1:  Select(mass, size);  break;
+				//case 2:  Opt_bubble(mass, size);  break;
+				//case 3:  Recur_bubble(mass, size);  break;
+				case 0:  break;
+				}  break;
 			}
 			case 0:
 			{

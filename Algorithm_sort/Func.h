@@ -1,9 +1,11 @@
 #pragma once
-int* creat_mass(int size);
-void fill_mass(int* mass, int size);
-void output_mass(int* mass, int size);
-void menu();
-void Podmenu_4();
-void Bubble(int* mass, int size);
-void Opt_bubble(int* mass, int size);
-void Recur_bubble(int* mass, int size);
+int* creat_mass(int size);                        // создание массива
+void fill_mass(int* mass, int size);              // заполнение массива
+void output_mass(int* mass, int size);            // вывод массива
+void menu();                                      // меню
+void Podmenu_4();                                 // подменю
+void Podmenu_5();                                  // подменю
+void Bubble(int* mass, int size);                 // пузырек
+void Opt_bubble(int* mass, int size);             // оптимизированный пузырек
+void Recur_bubble(int* mass, int size);           // рекурсивный пузырек
+void Select(int* mass, int size);                 // по выбору
