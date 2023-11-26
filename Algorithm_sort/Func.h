@@ -9,3 +9,4 @@ void Bubble(int* mass, int size);                 // пузырек
 void Opt_bubble(int* mass, int size);             // оптимизированный пузырек
 void Recur_bubble(int* mass, int size);           // рекурсивный пузырек
 void Select(int* mass, int size);                 // по выбору
+void Rec_select(int* mass, int size);             // по выбору рекурсия

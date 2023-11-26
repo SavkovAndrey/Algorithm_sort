@@ -43,8 +43,7 @@ int main()
 				Podmenu_5();   int m;   cin >> m;
 				switch (m) {
 				case 1:  Select(mass, size);  break;
-				//case 2:  Opt_bubble(mass, size);  break;
-				//case 3:  Recur_bubble(mass, size);  break;
+				case 2:  Rec_select(mass, size);  break;
 				case 0:  break;
 				}  break;
 			}
