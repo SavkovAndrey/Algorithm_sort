@@ -17,35 +17,31 @@ int main()
 	mass = creat_mass(size);
 	fill_mass(mass, size);
 	output_mass(mass, size);
+	menu();
 
 	while (true)
 	{
-		menu();
+		cout << "Сделайте выбор:";
 		int n;
 		cin >> n;
 
 		switch (n)
 		{
-			case 1:
+		    case 1:  menu();  break;
+			case 2:  fill_mass(mass, size);  break;
+			case 3:  output_mass(mass, size);  break;
+			case 4:
 			{
-				fill_mass(mass, size);
-				cout << "\nВы перезаписали массив новыми случайными данными!\n\n";
-				break;
+				Podmenu_4();   int m;   cin >> m;
+				switch (m)
+				{
+					case 1:  Bubble(mass, size);  break;
+					case 2:  Opt_bubble(mass, size);  break;
+					case 3:  Recur_bubble(mass, size);  break;
+					case 0:  break;
+				}
+			break;
 			}
-
-			case 2:
-			{
-				output_mass(mass, size);
-				break;
-			}
-
-			case 3:
-			{
-				Bubble(mass, size);
-				cout << "\nПроведена Пузырьковая сортировка массива!\n\n";
-				break;
-			}
-
 			case 0:
 			{
 				cout << "\nВы вышли из программы!\n";
