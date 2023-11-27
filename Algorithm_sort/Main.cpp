@@ -50,8 +50,8 @@ int main()
 			case 6: {
 				Podmenu_5();   int m;   cin >> m;
 				switch (m) {
-				case 1:  Select(mass, size);  break;
-				//case 2:  Rec_select(mass, size);  break;
+				case 1:  Insert(mass, size);  break;
+				case 2:  Rec_insert(mass, size);  break;
 				case 0:  break;
 				}  break;
 			}
