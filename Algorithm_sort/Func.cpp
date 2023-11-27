@@ -40,6 +40,7 @@ void menu()
 	cout << "4 - сортировка ПУЗЫРЬКОВАЯ массива\n";
 	cout << "5 - сортировка ПО ВЫБОРУ\n";
 	cout << "6 - сортировка ВСТАВКАМИ\n";
+	cout << "7 - сортировка ШЕЛЛА\n";
 	cout << "0 - выход из программы\n\n";
 }
 
@@ -186,4 +187,37 @@ void Rec_insert(int* mass, int size)
 		}
 		mass[j + 1] = buff;
 	
+}
+
+//------------------------- СОРТИРОВКА: ШЕЛЛА
+void Shell(int* mass, int size)
+{
+	for (int step = size / 2; step > 0; step /= 2)
+	{
+		for (int i = step; i < size; i++)
+		{
+			int buff = mass[i], j;
+			for (j = i; j >= step && mass[j - step] > buff; j -= step)
+			{
+				mass[j] = mass[j - step];
+			}
+			mass[j] = buff;
+		}
+	}
+}
+
+//------------------------- СОРТИРОВКА: ШЕЛЛА РЕКУРСИВНАЯ
+void Rec_shell(int* mass, int size, int step)                // step вынес в отдельную переменную и уже по ней 
+{                                                            // делаю рекурсию ( повторяя цикл из итерац. метода)
+		for (int i = step; i < size; i++)
+		{
+			int buff = mass[i], j;
+			for (j = i; j >= step && mass[j - step] > buff; j -= step)
+			{
+				mass[j] = mass[j - step];
+			}
+			mass[j] = buff;
+		}
+	if(step > 0)
+	Rec_shell(mass, size, step / 2);
 }

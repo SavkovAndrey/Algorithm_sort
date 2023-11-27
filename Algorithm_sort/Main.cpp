@@ -55,6 +55,14 @@ int main()
 				case 0:  break;
 				}  break;
 			}
+			case 7: {
+				Podmenu_5();   int m;   cin >> m;
+				switch (m) {
+				case 1:  Shell(mass, size);  break;
+				case 2:  Rec_shell(mass, size, size / 2);  break;
+				case 0:  break;
+				}  break;
+			}
 			case 0:
 			{
 				cout << "\nВы вышли из программы!\n";

@@ -11,4 +11,6 @@ void Recur_bubble(int* mass, int size);           // рекурсивный пузырек
 void Select(int* mass, int size);                 // по выбору
 void Rec_select(int* mass, int size);             // по выбору рекурсия
 void Insert(int* mass, int size);                 // вставками
-void Rec_insert(int* mass, int size);  // вставками рекурсия
+void Rec_insert(int* mass, int size);             // вставками рекурсия
+void Shell(int* mass, int size);                  // шелла
+void Rec_shell(int* mass, int size, int step);    // шелла рекурсия
