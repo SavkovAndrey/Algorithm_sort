@@ -16,3 +16,5 @@ void Shell(int* mass, int size);                  // шелла
 void Rec_shell(int* mass, int size, int step);    // шелла рекурсия
 void Quick(int* mass, int start, int end);        // быстрая
 int Partition(int* mass, int start, int end);     // быстрая (доп функция)
+void MergeSort(int* mass, int start, int end);    // слияние
+void Merge(int* mass, int start, int end, int mid); // слияние (сборка)

@@ -10,7 +10,7 @@ int main()
 	srand(time(NULL));
 	int size;
 	int* mass;
-
+	
 	cout << "Введите размер тестового массива: ";
 	cin >> size;
 	
@@ -64,7 +64,7 @@ int main()
 				}  break;
 			}
 			case 8:   Quick(mass, 0, size - 1);  cout << "\nПроведена БЫСТРАЯ сортировка массива!\n\n";  break;
-				
+			case 9:   MergeSort(mass, 0, size - 1);  cout << "\nПроведена сортировка СЛИЯНИЕМ массива!\n\n";  break;
 			case 0:
 			{
 				cout << "\nВы вышли из программы!\n";
