@@ -14,3 +14,5 @@ void Insert(int* mass, int size);                 // вставками
 void Rec_insert(int* mass, int size);             // вставками рекурсия
 void Shell(int* mass, int size);                  // шелла
 void Rec_shell(int* mass, int size, int step);    // шелла рекурсия
+void Quick(int* mass, int start, int end);        // быстрая
+int Partition(int* mass, int start, int end);     // быстрая (доп функция)

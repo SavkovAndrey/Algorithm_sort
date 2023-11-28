@@ -59,10 +59,12 @@ int main()
 				Podmenu_5();   int m;   cin >> m;
 				switch (m) {
 				case 1:  Shell(mass, size);  break;
-				case 2:  Rec_shell(mass, size, size / 2);  break;
+				case 2:  Rec_shell(mass, size, size / 2); cout << "\nПроведена сортировка массива ШЕЛЛА!\n\n";  break;
 				case 0:  break;
 				}  break;
 			}
+			case 8:   Quick(mass, 0, size - 1);  cout << "\nПроведена БЫСТРАЯ сортировка массива!\n\n";  break;
+				
 			case 0:
 			{
 				cout << "\nВы вышли из программы!\n";
