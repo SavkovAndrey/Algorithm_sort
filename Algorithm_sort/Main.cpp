@@ -65,6 +65,7 @@ int main()
 			}
 			case 8:   Quick(mass, 0, size - 1);  cout << "\nПроведена БЫСТРАЯ сортировка массива!\n\n";  break;
 			case 9:   MergeSort(mass, 0, size - 1);  cout << "\nПроведена сортировка СЛИЯНИЕМ массива!\n\n";  break;
+			case 10:   HeapSort(mass, size);  cout << "\nПроведена сортировка КУЧЕЙ массива!\n\n";  break;
 			case 0:
 			{
 				cout << "\nВы вышли из программы!\n";
